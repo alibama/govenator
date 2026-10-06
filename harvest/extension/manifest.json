@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Harvest — index this page",
+  "version": "0.1.0",
+  "description": "One click sends the page you're reading to your local Harvest daemon, where a local model parses it in the background.",
+  "permissions": ["activeTab", "scripting", "contextMenus", "storage"],
+  "host_permissions": ["http://127.0.0.1:8765/*", "http://localhost:8765/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "Index this page (Alt+Shift+I)" },
+  "commands": {
+    "index-page": { "suggested_key": { "default": "Alt+Shift+I" }, "description": "Index this page" }
+  }
+}

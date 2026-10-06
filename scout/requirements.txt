@@ -1,0 +1,5 @@
+streamlit>=1.40
+pandas>=2.0
+plotly>=5.20
+requests>=2.31
+playwright>=1.45   # optional: renders JavaScript-only pages (then: playwright install chromium)

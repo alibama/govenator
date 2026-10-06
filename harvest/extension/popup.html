@@ -1,0 +1,24 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  body { font: 13px -apple-system, "Segoe UI", Roboto, sans-serif; width: 270px; margin: 0; padding: 14px; color: #16202b; }
+  button.go { width: 100%; padding: 11px; font: inherit; font-weight: 600; color: #fff; background: #2b5b8a;
+              border: 0; border-radius: 8px; cursor: pointer; }
+  button.go:disabled { opacity: .6; cursor: default; }
+  #msg { margin: 10px 0 0; min-height: 1.2em; }
+  #msg.ok { color: #1f7a6d; } #msg.err { color: #a3352b; }
+  #status { margin-top: 10px; font-size: 12px; color: #5b6a79; line-height: 1.45; }
+  a { color: #2b5b8a; }
+  details { margin-top: 12px; font-size: 12px; color: #5b6a79; }
+  input { width: 100%; box-sizing: border-box; margin-top: 4px; padding: 5px 7px; border: 1px solid #b6c1cf; border-radius: 6px; }
+</style></head>
+<body>
+  <button class="go" id="index">Index this page</button>
+  <div id="msg"></div>
+  <div id="status">Checking the daemon…</div>
+  <div style="margin-top:8px;font-size:12px"><a href="http://localhost:8501" target="_blank">Open the dashboard</a> · shortcut Alt+Shift+I</div>
+  <details><summary>Settings</summary>
+    Daemon URL <input id="daemon" placeholder="http://127.0.0.1:8765">
+  </details>
+  <script src="popup.js"></script>
+</body></html>
